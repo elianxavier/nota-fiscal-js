@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/classes.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Nota Fiscal</title>
+</head>
+
+<body class="flex column space-between">
+    <!-- <main id="xml-data">
+    </main> -->
+
+    <div>
+        <table>
+            <tr>
+                <td class="font-1" colspan="2">RECEBEMOS DE <span class="font-1 text-blue xml-emitente-nome">NOME DA
+                        EMPRESA</span> OS
+                    PRODUTOS / SERVIÇOS
+                    CONSTANTES DA
+                    NOTA FISCAL
+                    INDICADO AO LADO</td>
+                <td class="font-2">NF-e Nº <span class="font-2 text-blue xml-numero-nfe">NÚMERO-DA-NFE</span> SÉRIE
+                    <span class="font-2 text-blue xml-numero-serie">SÉRIE</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="font-1">DATA DE RECEBIMENTO</td>
+                <td class="font-1">IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR</td>
+                <td>
+                    <picture class="cod-barras"><img src="Img/codigo-de-barras.png" alt="Código de barras"></picture>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td rowspan="3" class="h-20">
+                    <div class="flex column space-between full">
+                        <div>
+                            <p class="font-1">IDENTIFICAÇAO DO EMITENTE</p>
+                        </div>
+                        <div>
+                            <p class="font-3 bold"><span class="font-3 text-blue xml-emitente-nome">NOME DA
+                                    EMPRESA</span></p>
+                        </div>
+                        <div class="flex row gap">
+                            <div class="ml-1">
+                                <picture>
+                                    <img src="img/logo-nfe.jpeg" alt="" style="width: 10rem; height: 10rem;">
+                                </picture>
+                            </div>
+                            <div>
+                                <p class="font-2"><span class="font-2 text-blue xml-emitente-rua"></span></p>
+                                <p class="font-2">BAIRRO:<span class="font-2 text-blue xml-emitente-bairro"></span> -
+                                    CEP:<span class="font-2 text-blue xml-emitente-cep"></span>, Nº<span
+                                        class="font-2 text-blue xml-emitente-numero"></span> -
+                                    <span class="font-2 text-blue xml-emitente-cidade"></span> - <span
+                                        class="font-2 text-blue xml-emitente-uf"></span>
+                                </p>
+                                <p class="font-2">TEL: <span class="font-2 text-blue xml-emitente-fone"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td rowspan="3" class="h-20">
+                    <div class="flex column space-between full">
+                        <div>
+                            <h1 class="text-center">DANFE</h1>
+                        </div>
+                        <div>
+                            <p class="text text-center">DOCUMENTO AUXILIAR DA NOTA FISCAL ELETRÔNICA</p>
+                        </div>
+                        <div class="flex row gap">
+                            <div>
+                                <p class="font-2">0 - ENTRADA</p>
+                                <p class="font-2">1 - SAÍDA</p>
+                            </div>
+                            <div class="square">
+                                <p class="font-2"><span class="font-2 text-blue xml-tipo-de-operacao">X</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-2">Nº <span class="font-2 text-blue xml-numero-nfe"></span> fl. 1 /1</p>
+                        </div>
+                        <div>
+                            <p class="font-2">SÉRIE <span class="font-2 text-blue xml-numero-serie">SÉRIE</span></p>
+                        </div>
+                    </div>
+                </td>
+                <td class="cell-cod-barras-2">
+                    <picture class="cod-barras-2"><img src="Img/codigo-de-barras.png" alt="Código de barras"></picture>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p class="font-1">CHAVE DE ACESSO</p>
+                    </div>
+                    <div>
+                        <p class="font-2">1723 0701 5340 8001 6393 5501 0000 0819 7715 4296 1101</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="font-2">Consulta de autenticidade no portal nacional da NF-e</p>
+                    <p class="font-2">www.nfe.fazenda.gov.br/portal</p>
+                    <p class="font-2">ou no site da Sefaz Autorizadora</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="font-1">NATUREZA DA OPERAÇÃO</p>
+                    <p class="font-2"><span class="font-2 text-blue xml-natureza-da-operacao"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">PROTOCOLO DE AUTORIZAÇÃO DE USO</p>
+                    <p class="font-2">317230010561280 07/07/2023 10:04:05</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="font-1">INSCRIÇÃO ESTADUAL</p>
+                    <p class="font-2"><span class="font-2 xml-emitente-inscricao-estadual"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">INSCRIÇÃO ESTADUAL DO SUBST. TRIB.</p>
+                </td>
+                <td>
+                    <p class="font-1">CNPJ / CPF</p>
+                    <p class="font-2"><span class="font-2 xml-emitente-cnpj"></span></p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>DESTINATÁRIO / REMETENTE</h3>
+
+        <table>
+            <tr>
+                <td colspan="3">
+                    <p class="font-1">NOME / RAZÃO SOCIAL</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-nome"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">CNPJ / CPF</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-cnpj"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">DATA DA EMISSÃO</p>
+                    <p class="font-2"><span class="font-2 xml-data-emissao"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="font-1">ENDEREÇO</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-rua"></span>, <span
+                            class="font-2 xml-destinatario-numero"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">BAIRRO / DISTRITO</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-bairro"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">CEP</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-cep"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">DATA SAÍDA / ENTRADA</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="font-1">MUNICÍPIO</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-cidade"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">FONE / FAX</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-fone"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">UF</p>
+                    <p class="font-2"><span class="font-2 xml-destinatario-uf"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">INSCRIÇÃO ESTADUAL</p>
+                </td>
+                <td>
+                    <p class="font-1">HORA DA SAÍDA</p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>FATURA</h3>
+
+        <table>
+            <thead>
+                <tr class="bg-gray">
+                    <th></th>
+                    <th>NÚMERO</th>
+                    <th>VALOR ORIGINAL</th>
+                    <th>VALOR DESCONTO</th>
+                    <th>VALOR LÍQUIDO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="font-2">DADOS DA FATURA</p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>CÁLCULO DO IMPOSTO</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="font-1">BASE DE CÁLCULO DO ICMS</p>
+                    <p class="font-2"><span class="font-2 xml-imposto-icms-base"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR DO ICMS</p>
+                    <p class="font-2"><span class="font-2 xml-imposto-icms-valor"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">BASE CÁLC. ICMS SUBST</p>
+                    <p class="font-2"><span class="font-2 xml-imposto-icms-base-subst-trib"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR DO ICMS SUBST</p>
+                    <p class="font-2"><span class="font-2 xml-imposto-icms-valor-subst-trib"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR APROX. DOS TRIBUTOS</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR TOTAL DOS PRODUTOS</p>
+                    <p class="font-2"><span class="font-2 xml-produtos-valor-total"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="font-1">VALOR DO FRETE</p>
+                    <p class="font-2"><span class="font-2 xml-frete-valor"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR DO SEGURO</p>
+                    <p class="font-2"><span class="font-2 xml-seguro-valor-total"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">DESCONTO</p>
+                    <p class="font-2"><span class="font-2 xml-desconto-valor-total"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">OUTRAS DESP. ACESS.</p>
+                    <p class="font-2"><span class="font-2 xml-outras-despesas"></span></p>
+                </td>
+                <td>
+                    <p class="font-1">VALOR DO IPI</p>
+                    <p class="font-2"><span class="font-2 xml-ipi-valor-total"></span></p>
+                </td>
+                <td class="bg-gray">
+                    <p class="font-1">VALOR TOTAL DA NOTA</p>
+                    <p class="font-2"><span class="font-2 xml-nota-valor-total"></span></p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>TRANSPORTADOR / VOLUMES TRANSPORTADOS</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="font-1">RAZÃO SOCIAL</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">FRETE POR CONTA</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">CÓDIGO ANTT</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">PLACA DO VEÍCULO</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">UF</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">CNPJ / CPF</p>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="font-1">ENDEREÇO</p>
+                    <p></p>
+                </td>
+                <td colspan="2">
+                    <p class="font-1">MUNICÍPIO</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">UF</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">INSCRIÇÃO ESTADUAL</p>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="font-1">QUANTIDADE</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">ESPÉCIE</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">MARCA</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">NUMERAÇÃO</p>
+                    <p></p>
+                </td>
+                <td>
+                    <p class="font-1">PESO BRUTO</p>
+                    <p class="font-2"></p>
+                </td>
+                <td>
+                    <p class="font-1">PESO LÍQUIDO</p>
+                    <p class="font-2"></p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>DADOS DO PRODUTO / SERVIÇOS</h3>
+
+        <table>
+            <thead>
+                <tr class="bg-gray">
+                    <th rowspan="2">
+                        <p>CÓDIGO DO PROD.</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>DESCRIÇÃO DO PRODUTO / SERVIÇO</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>NCM / SH</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>CST</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>CFOP</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>UNID.</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>QUANT.</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>VALOR UNITÁRIO</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>VALOR TOTAL</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>PERC.(%) DESCONTO</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>BASE CÁLC. ICMS</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>VALOR I.C.M.S.</p>
+                    </th>
+                    <th rowspan="2">
+                        <p>VALOR I.P.I.</p>
+                    </th>
+                    <th colspan="2">
+                        <p>ALÍQUOTAS</p>
+                    </th>
+                </tr>
+                <tr class="bg-gray">
+                    <th>
+                        <p>ICMS</p>
+                    </th>
+                    <th>
+                        <p>IPI</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-codigo"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-descricao"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-cst"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-cfop"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-unidade"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-quantidade"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-valor-unidade"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-valor-total"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-icms-valor-base"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-icms-valor-total"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                    <td>
+                        <p class="font-2"><span class="font-2 xml-produto-icms-aliquota"></span></p>
+                    </td>
+                    <td>
+                        <p class="font-2"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>DADOS ADICIONAIS</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <p>INFORMAÇÕES COMPLEMENTARES</p>
+                    <p>FCP: 0,00</p>
+                    <p>Ref. ao(s) item(ns): 1 Mercadoria em perfeito estado - O CLIENTE RETIRARA A MERCADORIA DA
+                        FILIAL
+                        89 IE: 294041702 - MONTAGEM
+                        INELEGIVEL P/ A REGIAO OU TIPO DE VENDA - ORIG-VDA: 505 IE: 100000185 FIL.SAIDA:89 - NF. SE
+                        REFERE
+                        AO RECIBO DO CLIENTE No
+                        91263496 EMITIDO NA FILIAL 505 IE: 100000185 EM 07/07/23 - PROCON PALMAS-Rua SE 01, Qd.104 Lt.05
+                        Palmas-TO
+                        Cep 77.025-970 Fone: 151 - Valor Aprox.dos Tributos Federais: 268,86 FONTE:IBPT - Valor
+                        Aprox.dos
+                        Tributos Estaduais: 175,91 FONTE:IBPT -
+                        ATENCAO: NO ATO DO RECEBIMENTO, CERTIFIQUE-SE DAS CONDICOES FISICAS DO PRODUTO. CASO DETECTE
+                        ALGUMA
+                        AVARIA,
+                        RECUSE A ENTREGA E NAO ASSINE O DOCUMENTO DE RECEBIMENTO. NOTIFIQUE IMEDIATAMENTE NOSSO SERVICO
+                        DE
+                        ATENDIMENTO
+                        AO CLIENTE: WHATSAPP (62) 8562-7000.</p>
+                </td>
+                <td id="reservado-ao-fisco">
+                    <p>RESERVADO AO FISCO</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

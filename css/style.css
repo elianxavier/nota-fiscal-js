@@ -1,0 +1,46 @@
+body {
+    padding: 4rem 8rem;
+    height: 2500px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 2px solid #000;
+    padding: 0 .4rem;
+    padding-bottom: .4rem;
+    vertical-align: top;
+}
+
+hr {
+    margin: 2rem 0;
+    border: 2px solid #000;
+}
+
+p {
+    display: block;
+}
+
+.cod-barras-2 img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#reservado-ao-fisco {
+    width: 40rem;
+}
+
+span {
+    color: blue;
+}

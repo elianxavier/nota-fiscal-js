@@ -1,0 +1,73 @@
+.font-1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.font-2 {
+    font-size: 2rem;
+}
+
+.font-3 {
+    font-size: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.square {
+    border: 2px solid #000;
+    padding: .5rem 1rem;
+}
+
+.gap {
+    gap: 3rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.full {
+    height: 100%;
+}
+
+.h-20 {
+    height: 20rem;
+}
+
+.text {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ml-1 {
+    margin-left: 2rem;
+}
+
+.bg-gray {
+    background-color: lightgrey;
+}
+
+.text-blue {
+    color: blue;
+}
